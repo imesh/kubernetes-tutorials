@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: ReplicaSet
+metadata:
+  labels:
+    app: tomcat
+  name: tomcat
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tomcat
+  template:
+    metadata:
+      labels:
+        app: tomcat
+    spec:
+      containers:
+      - image: tomcat:alpine
+        name: tomcat
+        ports:
+        - containerPort: 8080
+          protocol: TCP
