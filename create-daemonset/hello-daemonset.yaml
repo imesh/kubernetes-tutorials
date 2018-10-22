@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: hello-daemonset
+  labels:
+    app: hello-daemonset
+spec:
+  selector:
+    matchLabels:
+      name: hello-daemonset
+  template:
+    metadata:
+      labels:
+        name: hello-daemonset
+    spec:
+      tolerations:
+      - key: node-role.kubernetes.io/master
+        effect: NoSchedule
+      containers:
+      - name: hello-daemonset
+        image: gcr.io/google-samples/node-hello:1.0
+        resources:
+          limits:
+            memory: 200Mi
+          requests:
+            cpu: 100m
+            memory: 200Mi
