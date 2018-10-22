@@ -10,3 +10,13 @@ spec:
     image: tomcat:alpine
     ports:
     - containerPort: 8080
+    readinessProbe:
+      tcpSocket:
+        port: 7777
+      initialDelaySeconds: 5
+      periodSeconds: 10
+    livenessProbe:
+      tcpSocket:
+        port: 7777
+      initialDelaySeconds: 15
+      periodSeconds: 20
