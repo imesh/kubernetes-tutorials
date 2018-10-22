@@ -1,8 +1,8 @@
-# Create a Tomcat Deployment
+# Create a Tomcat Deployment on Kubernetes
 
 This tutorial guides you to create an Apache Tomcat container on Kubernetes using kubectl run command and Kubernetes Deployment definition.
 
-## Using Run Command
+## How to run using "kubectl run" command
 
 1. Create an apache tomcat deployment using kubectl run command:
 
@@ -16,7 +16,7 @@ kubectl run tomcat --image=tomcat:alpine --port=8080
 kubectl expose deployment tomcat --name=tomcat --type=LoadBalancer --port=80 --target-port=8080
 ```
 
-## Using a Deployment Definition
+## How to run using a Deployment definition
 
 1. Create Tomcat deployment:
 

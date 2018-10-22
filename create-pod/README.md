@@ -1,8 +1,8 @@
-# Create a Tomcat Pod
+# Create a Tomcat Pod on Kubernetes
 
 This tutorial guides you to create an Apache Tomcat container on Kubernetes using a Kubernetes Pod definition.
 
-## Steps to follow:
+## How to run:
 
 1. Create Tomcat pod:
 
