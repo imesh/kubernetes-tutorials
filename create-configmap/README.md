@@ -2,7 +2,7 @@
 
 This tutorial guides you on creating a ConfigMap for updating configurations of Apache Tomcat.
 
-## How to run:
+## How to Run
 
 1. Have a look at the `<Connector port="9090">` section of the Apache Tomcat server.xml configuration file located in the `conf/` folder. Here, we have updated the default HTTP port to `9090`:
 
@@ -47,3 +47,12 @@ This tutorial guides you on creating a ConfigMap for updating configurations of 
    Proto RefCnt Flags       Type       State         I-Node PID/Program name    Path
    ```
 
+## How to Clean
+
+- Execute below commands to remove all Kubernetes resources created in this tutorial:
+  
+  ```bash
+  kubectl delete -f tomcat-pod.yaml
+  kubectl delete -f tomcat-service.yaml
+  kubectl delete configmap tomcat-server-xml-conf
+  ```
