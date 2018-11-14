@@ -27,6 +27,8 @@ This tutorial guides you creating a Kubernetes Secret and exposing that as envir
 4. Check the output of the busybox pod:
 
    ```bash
+   kubectl logs busybox
+   
    KUBERNETES_PORT=tcp://xxx:443
    KUBERNETES_SERVICE_PORT=443
    HOSTNAME=busybox
