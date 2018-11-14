@@ -1,4 +1,4 @@
-# Create a ConfigMap from Key/Value Pairs
+# Create a ConfigMap using Key/Value Pairs
 
 This tutorial guides you creating a ConfigMap using key/value pairs and exposing them to a Pod as environment variables.
 

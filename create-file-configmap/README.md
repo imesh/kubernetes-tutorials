@@ -1,6 +1,6 @@
-# Create a ConfigMap for Updating Server Configurations
+# Create a ConfigMap using Files
 
-This tutorial guides you on creating a ConfigMap for updating configurations of Apache Tomcat.
+This tutorial guides you creating a ConfigMap based on files and exposing them to a Pod using volume mounts.
 
 ## How to Run
 
