@@ -36,18 +36,18 @@ This tutorial guides you creating a ConfigMap using key/value pairs and exposing
    ```bash
    kubectl logs busybox
 
-   KUBERNETES_PORT=tcp://xxx:xxx
-   KUBERNETES_SERVICE_PORT=xxx
+   KUBERNETES_PORT=tcp://xxx:443
+   KUBERNETES_SERVICE_PORT=443
    HOSTNAME=busybox
    SHLVL=1
    HOME=/root
    KUBERNETES_PORT_443_TCP_ADDR=xxx
    PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-   KUBERNETES_PORT_443_TCP_PORT=xxx
+   KUBERNETES_PORT_443_TCP_PORT=443
    KUBERNETES_PORT_443_TCP_PROTO=tcp
    SPECIAL_LEVEL_KEY=very
-   KUBERNETES_SERVICE_PORT_HTTPS=xxx
-   KUBERNETES_PORT_443_TCP=tcp://xxx:xxx
+   KUBERNETES_SERVICE_PORT_HTTPS=443
+   KUBERNETES_PORT_443_TCP=tcp://xxx:443
    PWD=/
    KUBERNETES_SERVICE_HOST=xxx
    ```

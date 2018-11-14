@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: busybox
+spec:
+  containers:
+    - name: busybox
+      image: k8s.gcr.io/busybox
+      command: [ "/bin/sh", "-c", "tail -f /dev/null" ]
+      volumeMounts:
+      - name: credentials-volume
+        mountPath: "/etc/credentials"
+        readOnly: true
+  volumes:
+  - name: credentials-volume
+    secret:
+      secretName: credentials
+  restartPolicy: Never

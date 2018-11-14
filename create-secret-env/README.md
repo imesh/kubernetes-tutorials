@@ -1,6 +1,6 @@
 # Create a Secret and Expose as Environment Variables
 
-This tutorial guides you creating a Kubernetes Secret and exposing that as a volume mount.
+This tutorial guides you creating a Kubernetes Secret and exposing that as environment variables.
 
 ## How to Run
 
@@ -15,9 +15,11 @@ This tutorial guides you creating a Kubernetes Secret and exposing that as a vol
    kubectl apply -f busybox-pod.yaml
    ```
 
-3. Wait until the busybox pod status get changed to Completed:
+3. Wait until the busybox pod status is changed to Completed:
 
    ```bash
+   kubectl get pods/busybox
+
    NAME      READY     STATUS      RESTARTS   AGE
    busybox   0/1       Completed   0          4s
    ```
