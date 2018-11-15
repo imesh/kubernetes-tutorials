@@ -1,4 +1,4 @@
-# Create a Tomcat Deployment on Kubernetes
+# Create a Deployment
 
 This tutorial guides you to create an Apache Tomcat container on Kubernetes using kubectl run command and Kubernetes Deployment definition.
 

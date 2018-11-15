@@ -1,4 +1,4 @@
-# Create a Sample DaemonSet on Kubernetes
+# Create a DaemonSet
 
 This tutorial creates a sample daemonset using `gcr.io/google-samples/node-hello:1.0` docker image in the default namespace.
 

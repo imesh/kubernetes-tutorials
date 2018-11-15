@@ -1,4 +1,4 @@
-# Create a Cassandra Ring on Kubernetes
+# Create a StatefulSet
 
 This tutorial was directly taken from official Kubernetes tutorial [Example: Deploying Cassandra with Stateful Sets](https://kubernetes.io/docs/tutorials/stateful-application/cassandra/).
 

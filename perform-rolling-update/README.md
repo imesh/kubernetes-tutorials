@@ -1,4 +1,4 @@
-# Execute a Rolling Update
+# Perform a Rolling Update
 
 This tutorial guides you executing a rolling update for deploying a newer version of a software component.
 
